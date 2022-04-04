@@ -1,0 +1,8 @@
+Follower Result<br>
+<%= @input1 %> is <%= @result %>
+<hr>
+<h1>Enter your Following number to check if you are Famous!</h1>
+<%= form_tag "/validate" do %>
+<%= text_field_tag :search_string %>
+<%= submit_tag "Search" %>
+<% end %>

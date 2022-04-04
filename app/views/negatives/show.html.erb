@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @negative %>
+
+<div>
+  <%= link_to "Edit this negative", edit_negative_path(@negative) %> |
+  <%= link_to "Back to negatives", negatives_path %>
+
+  <%= button_to "Destroy this negative", @negative, method: :delete %>
+</div>

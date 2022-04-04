@@ -1,0 +1,22 @@
+<%= form_with(model: negative) do |form| %>
+  <% if negative.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(negative.errors.count, "error") %> prohibited this negative from being saved:</h2>
+
+      <ul>
+        <% negative.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :negativenum, style: "display: block" %>
+    <%= form.number_field :negativenum %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

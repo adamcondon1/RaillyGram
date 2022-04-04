@@ -1,0 +1,2 @@
+class Fame < ApplicationRecord
+end

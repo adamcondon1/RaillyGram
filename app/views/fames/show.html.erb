@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @fame %>
+
+<div>
+  <%= link_to "Edit this fame", edit_fame_path(@fame) %> |
+  <%= link_to "Back to fames", fames_path %>
+
+  <%= button_to "Destroy this fame", @fame, method: :delete %>
+</div>

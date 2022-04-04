@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Fames</h1>
+
+<div id="fames">
+  <% @fames.each do |fame| %>
+    <%= render fame %>
+    <p>
+      <%= link_to "Show this fame", fame %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New fame", new_fame_path %>
